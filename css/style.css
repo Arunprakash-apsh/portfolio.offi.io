@@ -250,9 +250,12 @@ textarea {
 .about {
   background: #fafafa; }
   .about__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem; }
+    display: flex;
+    /* grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; */
+    flex-direction: column;
+    gap: 10rem;
+   }
     @media only screen and (max-width: 56.25em) {
       .about__content {
         grid-template-columns: 1fr;
@@ -689,9 +692,12 @@ textarea {
         padding: 3.5rem 0; } }
 
 .skills {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  /* display: flex; */
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem; 
+  /* flex-wrap: wrap;
+  flex-direction: column; */
  }
   .skills__skill {
     padding: 1rem 2rem;
